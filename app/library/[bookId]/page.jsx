@@ -2,7 +2,14 @@ import React from "react";
 import axios from "axios";
 import Image from "next/image";
 
+
+
+export const metadata = {
+  title: "Book Detail",
+};
 const page = async ({ params }) => {
+
+  // calling the api for one book by it's id provided by the params
   const response = await axios.get(
     `https://gutendex.com/books/?ids=${params.bookId}`
   );

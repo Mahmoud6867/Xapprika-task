@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Card = (props) => {
+  // displays the books as cards in the page and once clicked on it it takes you to a detailed page about the book you cliked on
   return (
           <Link
             href={`library/${props.id}`}
