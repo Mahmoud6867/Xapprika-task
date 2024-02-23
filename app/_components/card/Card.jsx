@@ -7,14 +7,14 @@ const Card = (props) => {
           <Link
             href={`library/${props.id}`}
             target="_blank"
-            className="flex m-5 bg-slate-200 rounded-lg"
+            className="flex m-5 bg-slate-200 rounded-lg w-[150px]  lg:w-[300px]"
           >
-            <div className="rounded-lg w-[300px] shadow-2xl p-4 bg ">
-              <div className="flex justify-center mb-5 h-[400px]">
+            <div className="rounded-lg shadow-2xl p-4 w-full">
+              <div className="flex justify-center mb-5 h-[200px] lg:h-[400px]">
                 <Image
                   src={`https://www.gutenberg.org/cache/epub/${props.id}/pg${props.id}.cover.medium.jpg`}
                   alt={`Cover of image`}
-                  className="rounded-t-lg"
+                  className="rounded-lg"
                   width="300"
                   height="400"
                 />

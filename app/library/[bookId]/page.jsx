@@ -21,8 +21,8 @@ const page = async ({ params }) => {
       console.log("the data from action map", index, book),
       (
         <div key={index} className="bg-white flex justify-center h-screen">
-          <div className="flex flex-col md:flex-row-reverse justify-between p-10 bg-slate-100 grow max-w-[1920px] md:my-32 rounded-lg  drop-shadow-2xl">
-            <div className="flex justify-center drop-shadow-2xl w-1/2 rounded-lg ms-5">
+          <div className="flex flex-col lg:flex-row-reverse justify-between h-fit lg:h-auto p-10 bg-slate-100  grow md:max-w-[600px] lg:max-w-[1440px] lg:my-32 rounded-lg drop-shadow-2xl">
+            <div className="flex justify-center drop-shadow-2xl w-full lg:w-1/2 rounded-lg lg:ms-5">
               <Image
                 src={`https://www.gutenberg.org/cache/epub/${params.bookId}/pg${params.bookId}.cover.medium.jpg`}
                 alt={`Cover of image`}
@@ -31,8 +31,8 @@ const page = async ({ params }) => {
                 height={600}
               />
             </div>
-            <div className="me-5 w-1/2">
-              <h2 className="text-xl font-semibold text-center mb-5">
+            <div className="flex flex-col justify-center lg:me-5 w-full lg:w-1/2">
+              <h2 className="text-xl font-semibold text-center my-5 ">
                 Title: {book.title}
               </h2>
               <p className="text-gray-600 text-center mb-5">
